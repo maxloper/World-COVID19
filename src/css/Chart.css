@@ -1,0 +1,36 @@
+.Chart {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 1.5rem;
+  background-color: white;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.2);
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.7),
+    rgba(255, 255, 255, 0.2)
+  );
+  z-index: 4;
+}
+
+.Chart .total_vaccinations_chart {
+  width: 100%;
+}
+
+.Chart .daily_vaccinations_chart {
+  width: 100%;
+}
+
+.Chart canvas {
+  max-width: 100%;
+}
+
+@media (max-width: 780px) {
+  .Chart {
+    flex-direction: column;
+  }
+  .Chart canvas {
+    max-width: 95%;
+  }
+}

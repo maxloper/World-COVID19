@@ -1,0 +1,141 @@
+.Stats {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 1.5rem;
+}
+
+.Stats h3,
+p,
+h2 {
+  font-weight: 800;
+  opacity: 0.65;
+}
+
+.Stats .total_vaccinations,
+.daily_vaccinations,
+.vaccines {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 0.5rem;
+  background-color: white;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.2);
+  height: 200px;
+  width: 350px;
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.7),
+    rgba(255, 255, 255, 0.3)
+  );
+}
+
+.Stats .divider__line {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  width: 80%;
+}
+
+.Stats h3 {
+  margin: 0.3rem 0;
+}
+
+.Stats #date {
+  margin: 1rem 0;
+}
+
+.Stats #main_result {
+  font-size: 3rem;
+  opacity: 1;
+  color: #2a9d8f;
+}
+
+.Stats #vaccine_main_result {
+  font-size: 1.5rem;
+  color: #2a9d8f;
+}
+
+@media (max-width: 1270px) {
+  .Stats .total_vaccinations,
+  .daily_vaccinations,
+  .vaccines {
+    width: 300px;
+  }
+}
+
+@media (max-width: 1120px) {
+  .Stats .total_vaccinations,
+  .daily_vaccinations,
+  .vaccines {
+    width: 250px;
+  }
+}
+
+@media (max-width: 970px) {
+  .Stats .total_vaccinations,
+  .daily_vaccinations,
+  .vaccines {
+    width: 200px;
+  }
+
+  .Stats #main_result {
+    font-size: 2rem;
+  }
+
+  .Stats #vaccine_main_result {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 840px) {
+  .Stats .total_vaccinations,
+  .daily_vaccinations,
+  .vaccines {
+    width: 150px;
+  }
+
+  .Stats #main_result {
+    font-size: 1.8rem;
+  }
+
+  .Stats #vaccine_main_result {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 680px) {
+  .Stats .total_vaccinations,
+  .daily_vaccinations,
+  .vaccines {
+    width: 120px;
+  }
+
+  .Stats #main_result {
+    font-size: 1.3rem;
+  }
+
+  .Stats #vaccine_main_result {
+    font-size: 0.9rem;
+  }
+}
+@media (max-width: 590px) {
+  .Stats {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .Stats .total_vaccinations,
+  .daily_vaccinations,
+  .vaccines {
+    width: 100%;
+    margin-bottom: 0.5rem;
+  }
+  .Stats #main_result {
+    font-size: 3rem;
+  }
+
+  .Stats #vaccine_main_result {
+    font-size: 1.5rem;
+  }
+}
